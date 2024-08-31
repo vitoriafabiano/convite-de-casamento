@@ -1,0 +1,205 @@
+main {
+	height: 100vh;
+
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+	overflow: hidden;
+}
+
+h1 {
+	font-family: "Dancing Script", cursive;
+	font-size: 50px;
+}
+
+strong {
+	font-weight: 900;
+	font-size: 20px;
+}
+
+#inicio {
+	align-items: center;
+	gap: 30px;
+}
+
+#inicio img {
+	width: 150px;
+	height: 150px;
+}
+#date {
+	gap: 25px;
+}
+
+#date .time,
+#date time {
+	font-size: 27px;
+}
+#sec-icons {
+	gap: 30px;
+}
+#icons {
+	display: flex;
+	gap: 30px;
+}
+
+#icons svg {
+	transform: rotateZ(90deg);
+	margin: -20px;
+}
+
+#icons svg * {
+	font-size: 20px;
+	font-weight: 600;
+}
+.icons-img {
+	position: absolute;
+	width: 55px;
+	height: 55px;
+}
+
+#icons a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#icons-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 7px;
+}
+
+#icons-content p {
+	font-weight: 500;
+}
+
+.display {
+	display: flex;
+	flex-direction: column;
+}
+
+#folha0 {
+	position: absolute;
+	width: 300px;
+	height: auto;
+	right: 0px;
+	top: -50px;
+
+	pointer-events: none;
+
+	animation: folha0 15s infinite;
+}
+@keyframes folha0 {
+	0% {
+		transform: rotate(10deg) scale(1);
+	}
+	30% {
+		transform: rotate(11deg) scale(1.03);
+	}
+	50% {
+		transform: rotate(12deg) scale(0.97);
+	}
+	80% {
+		transform: rotate(11deg) scale(1.01);
+	}
+	100% {
+		transform: rotate(10deg) scale(1);
+	}
+}
+#folha1 {
+	position: absolute;
+	width: 300px;
+	height: auto;
+	left: -20px;
+	top: -50px;
+
+	pointer-events: none;
+
+	animation: folha1 15s infinite;
+}
+
+@keyframes folha1 {
+	0% {
+		transform: rotate(-15deg) scale(1.15);
+	}
+	30% {
+		transform: rotate(-14deg) scale(1.14);
+	}
+	50% {
+		transform: rotate(-16deg) scale(1.2);
+	}
+	80% {
+		transform: rotate(-13deg) scale(1.11);
+	}
+	100% {
+		transform: rotate(-15deg) scale(1.15);
+	}
+}
+
+#folha2 {
+	width: 170px;
+	height: auto;
+
+	position: absolute;
+	left: 0%;
+	top: 70%;
+
+	transform-origin: left center;
+	transform: rotate(-75deg);
+
+	pointer-events: none;
+	animation: folha2 20s infinite linear;
+}
+
+@keyframes folha2 {
+	0% {
+		transform: rotate(-75deg) scale(1);
+	}
+	30% {
+		transform: rotate(-73deg) scale(1.05);
+	}
+	50% {
+		transform: rotate(-75deg) scale(1.07);
+	}
+	80% {
+		transform: rotate(-77deg) scale(1.03);
+	}
+	100% {
+		transform: rotate(-75deg) scale(1);
+	}
+}
+
+#folha3 {
+	width: 170px;
+	height: auto;
+
+	position: absolute;
+	right: -40px;
+	top: 50%;
+
+	transform-origin: rigt center;
+	transform: rotate(75deg);
+
+	pointer-events: none;
+	animation: folha3 15s infinite linear;
+}
+
+@keyframes folha3 {
+	0% {
+		transform: rotate(75deg) scale(1);
+	}
+	30% {
+		transform: rotate(73deg) scale(1.05);
+	}
+	50% {
+		transform: rotate(76deg) scale(1.07);
+	}
+	80% {
+		transform: rotate(74deg) scale(1.03);
+	}
+	100% {
+		transform: rotate(75deg) scale(1);
+	}
+}
